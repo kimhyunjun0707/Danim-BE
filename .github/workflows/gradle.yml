@@ -23,7 +23,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: jasypt key주입
-
     - run: echo ${{secrets.JASYPT}} > ./src/main/resources/application.properties
     - run: mkdir -p ./src/main/resources/
     - run: touch ./src/main/resources/application.properties
